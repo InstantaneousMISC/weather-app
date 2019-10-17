@@ -1,0 +1,326 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Merriweather Sans', sans-serif;
+  letter-spacing: .6px;
+  color:#fff;
+  box-sizing: border-box
+}
+*, *:befor, *:after{
+  box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1{
+  font-size:40px;
+}
+
+h2{
+  font-size: 32px;
+}
+
+h3{
+  font-size: 26px;
+}
+
+h4{
+  font-size: 20px;
+}
+
+h5{
+  font-size: 16px;
+}
+
+h6{
+  font-size: 12px;
+}
+/* Root html classes */
+#weather-root{
+
+}
+.input-container{
+  float:left;
+  clear:left;
+  width:100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.input-container form input{
+  height: 37px;
+  padding-left: 15px;
+  color: #2b2b2b;
+  width: 35%;
+  border-radius: 5px;
+  border: solid 2px #F56217;
+}
+
+.full-width{
+  width:100%;
+}
+
+.error-message{
+  color: #fff;
+  border-left: solid 2px #D8000C;
+  padding-left: 10px;
+  display: block;
+  margin-top: 10px;
+  opacity: .9;
+  display: none;
+  background: rgba(0,0,0,.5);
+  padding: 5px;
+
+}
+
+.error-message i{
+  margin-right:5px;
+}
+
+/* Title */
+.title-container{
+  text-align:center;
+}
+
+.title-container h2{
+  font-size: 32px;
+}
+
+.title-container p{
+
+}
+
+/*Weather  */
+.weather-app-container{
+  width:320px;
+  background:#F56217;
+  display: inline-block;
+  padding-bottom: 20px;
+  border-radius:5px;
+  margin:15px;
+  box-shadow: grey 4px 4px 10px;
+}
+
+.weather-container{
+  margin-top: 0px;
+  padding-top:20px;
+  padding-bottom:0px;
+  color: white;
+  margin-bottom: -16px;
+  border-left: solid 4px #F56217;
+  border-right: solid 4px #F56217;
+  margin-bottom: 10px;
+}
+
+.weather-container i{
+  margin-right: 12px;
+  width: 27px;
+  height: 27px;
+  font-size: 15px;
+  background: rgba(255,255,255,.5);
+  border-radius: 38px;
+  color: #234a69;
+  padding: 6px 6px;
+  text-align: center;
+}
+
+.weather-container p{
+  display: inline-block;
+}
+
+strong{
+  color: #244f71;
+}
+
+.weather-container .details{
+  margin-left:15px;
+}
+
+.cur-weather-disp{
+  text-align:center;
+  margin-top:10px;
+  text-align:center;
+}
+
+.cur-weather-disp h2{
+  margin-top:0px;
+  font-size: 27px;
+}
+
+.cur-weather-disp p{
+  margin-top:-20px;
+  color: #244f71;
+  font-size:20px;
+}
+
+.cur-weather-disp h4{
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.top-display{
+  text-align: center;
+  margin-top: 25px;
+}
+.top-display h2{
+  letter-spacing: 4px;
+}
+.top-display h4{
+  font-size:30px;
+  margin-bottom: 40px;
+}
+
+.get-weather-form{
+  width: auto;
+  display: inline-block;
+  margin: auto;
+}
+
+.weather-icon{
+  width: 88px;
+  display: none;
+  margin-top: 20px;
+  margin:auto;
+}
+
+
+
+
+
+/*btns*/
+.btn-main{
+  border-radius: 3px;
+  height: 37px;
+  letter-spacing: .5px;
+  border: #fff solid 1px;
+  background: white;
+  color:#F56217;
+}
+.get-location-btn{
+  width:100%;
+  margin-top:10px;
+  background: white;
+  color:#F56217;
+  margin-bottom:10px;
+}
+
+.get-weather-form .get-weather-btn{
+  margin-left: 3%;
+  width: 62%;
+}
+
+.get-weather-form .get-weather-btn:hover, .get-location-btn:hover{
+  color:white;
+  background:transparent;
+}
+/* Animations */
+.cloud-animation-container{
+  display:relative;
+  height:300px;
+  width:300px;
+}
+.cloud-animation-container .cloud{
+  position: absolute;
+  top: 188px;
+  left: 49px;
+  width: 250px;
+  height: 70px;
+  color: white;
+  background: white;
+  border-radius: 50px;
+  box-shadow: 3px 5px 20px -1px lightslategrey;
+}
+.cloud-animation-container .cloud::before{
+  position: absolute;
+  content: '';
+  top: -30px;
+  left: 40px;
+  width: 66px;
+  height: 70px;
+  color: white;
+  background: white;
+  border-radius: 50px;
+}
+
+.cloud-animation-container .cloud::after{
+  position: absolute;
+  content: '';
+  top: -68px;
+  left: 82px;
+  width: 131px;
+  height: 130px;
+  color: white;
+  background: white;
+  border-radius: 75px;
+}
+
+.cloud-animation-container .sun{
+  border-radius: 75px;
+  position: absolute;
+  top: 83px;
+  left: 50px;
+  width: 115px;
+  height: 115px;
+  background: gold;
+  border-radius:75px;
+  box-shadow: 0px 0px 20px 5px gold;
+  animation: glow  2s linear infinite ;
+  animation: sun-motion  30s linear infinite ;
+}
+
+/*Loading styles*/
+.loading{
+text-align:center;
+}
+.loading svg{
+  width: 17%;
+  margin:auto;
+  margin-top:30px;
+  display: inline-block;
+  text-align:center;
+}
+
+.loading h4{
+  margin-top:15px;
+}
+
+
+@keyframes animate{
+  0% {box-shadow: 0px 0px 20px 5px gold; top: 83px; left: 50px; }
+  50% {box-shadow: 0px 0px 20px 10px gold; top: 183px; left: 150px;}
+  100% {box-shadow: 0px 0px 20px 5px gold; top: 83px; left: 50px;}
+}
+@keyframes sun-motion{
+  0% {left: 50px; }
+  15% {left: 80px; }
+  27% {left: 120px;}
+  37% {left: 150px; }
+  50% {left: 180px;}
+  65% {right: 150px; }
+  75% {right: 120px; }
+  87% {right: 80px;}
+  100% {right: 50px; }
+
+}
